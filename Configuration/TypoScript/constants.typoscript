@@ -32,6 +32,12 @@ plugin.tx_flipbook {
         zipUrl =
         # cat=rflipbasic/settings/0030; type=string; label=Skin: "light"  or "dark", default is "light"
         skin =
+        # cat=rflipbasic/settings/0031; type=options[WebGL=webgl,3D=3d,2D=2d,Swipe=swipe]; label=View mode: 2d renders the pages sharper than webgl
+        viewMode = 2d
+        # cat=rflipbasic/settings/0032; type=int+; label=Page texture size: height of the rendered page images in pixels
+        pageTextureSize = 2048
+        # cat=rflipmobile/settings/0005; type=int+; label=Page texture size on mobile devices: height of the rendered page images in pixels
+        pageTextureSizeMobile = 1024
 
         assets {
             # cat=rflipassets/settings/10; type=string; label=Preloader
