@@ -11,10 +11,18 @@
                 <el>
                     <settings.fullbook type="array">
                         <label>Direkt geöffnet anzeigen (kein Klick zum Öffnen nötig)</label>
+                        <onChange>reload</onChange>
                         <config type="array">
                             <type>check</type>
                         </config>
                     </settings.fullbook>
+                    <settings.wide type="array">
+                        <label>Breit anzeigen (nutzt die volle Inhaltsbreite, das Template muss es unterstützen)</label>
+                        <displayCond>FIELD:settings.fullbook:=:1</displayCond>
+                        <config type="array">
+                            <type>check</type>
+                        </config>
+                    </settings.wide>
                     <settings.header type="array">
                         <label>LLL:EXT:flipbook/Resources/Private/Language/locallang_db.xlf:flexform.sheet.options.header</label>
                         <config type="array">
